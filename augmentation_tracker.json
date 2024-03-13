@@ -1,0 +1,183 @@
+{
+	"theme_augmentations": {
+		"font": "Arial",
+		"background": "white"
+	},
+	"component_names": [
+		"HeaderOne",
+		"SearchBar",
+		"ModeToggler",
+		"ToggleBtn",
+		"NotificationPopup",
+		"MassagePopup",
+		"Author",
+		"ProfilePopup",
+		"HeaderTwo",
+		"ResProfilePopup",
+		"Sidebar",
+		"SidebarV2",
+		"Slider",
+		"Settings",
+		"TabBtn",
+		"Progressbar",
+		"PaymentAndBilling",
+		"PBCard",
+		"AddWallet",
+		"AddWalletModal",
+		"AddMoney",
+		"CardSelect"
+	],
+	"component_information": {
+		"HeaderOne": {
+			"count": 1,
+			"location": "to the top of the container",
+			"description": "header for large screen",
+			"children": {
+				"SearchBar": {
+					"count": 1,
+					"location": "placed centered",
+					"description": "user can enter input"
+				},
+				"ModeToggler": {
+					"count": 1,
+					"location": "to the right of the SearchBar",
+					"description": "theme toggle button",
+					"functionality": "toggles the global theme"
+				},
+				"ToggleBtn": {
+					"count": 3,
+					"location": "to the right of the ModeToggler button",
+					"description": "on clicked opens popup",
+					"children": {
+						"NotificationPopup": {
+							"count": 1,
+							"description": "opens on first toggle button clicked"
+						},
+						"MassagePopup": {
+							"count": 1,
+							"description": "opens on second toggle button clicked"
+						},
+						"StorePopUp": {
+							"count": 1,
+							"description": "opens on third toggle button clicked"
+						}
+					}
+				},
+				"Author": {
+					"count": 1,
+					"location": "to the right of the ToggleBtn",
+					"description": "opens the popup containing user basic information"
+				},
+				"ProfilePopup": {
+					"count": 1,
+					"description": "opens a dropdown of some nav"
+				}
+			},
+			"children_orientation_description": "flexed"
+		},
+		"HeaderTwo": {
+			"count": 1,
+			"location": "to the top of the page",
+			"description": "visible on the mobile screen",
+			"children": {
+				"ResProfilePopup": {
+					"count": 1,
+					"location": "to the right in the container",
+					"description": "collapsible list on toggled"
+				}
+			},
+			"children_orientation_description": "flexed"
+		},
+		"Sidebar": {
+			"count": 1,
+			"location": "to the left of the page, fixed",
+			"description": "collapsible, to the left, on toggled",
+			"children": {
+				"menuItems": {
+					"description": "list of menus in column that contains svg followed by menu in a flexed container"
+				}
+			}
+		},
+		"SidebarV2": {
+			"count": 1,
+			"location": "to the left of the page, fixed",
+			"description": "collapsible, to the right, on toggled",
+			"children": "svg of the menus in smaller screen and when toggled"
+		},
+		"Settings ": {
+			"count": 1,
+			"location": "below the header, to the right of the SideBar",
+			"description": "holding the main components of the page",
+			"children": {
+				"SettingsSidebar ": {
+					"count": 1,
+					"location": "below the header",
+					"description": "The SettingsSidebar contains list of tabs",
+					"children": {
+						"TabBtn": {
+							"count": 7,
+							"location": "top of the SettingsSidebar",
+							"description": "link to the respective tabs"
+						},
+						"Progressbar": {
+							"count": 1,
+							"location": "below the TabBtn",
+							"description": "Shows the progress"
+						}
+					}
+				},
+				"Payment ": {
+					"count": 1,
+					"location": "besides the SettingsSidebar",
+					"description": "Displays the card details ",
+					"children": {
+						"PaymentAndBilling": {
+							"count": 1,
+							"location": "It contains the payment methods",
+							"description": "dropdown list",
+							"children": {
+								"PBCard": {
+									"count": 5,
+									"location": "Present below the header",
+									"description": "Contains the images and information of debit card or credit card"
+								},
+								"AddWallet": {
+									"count": 1,
+									"location": "Present below the PBCard",
+									"description": "Contains the images and information of debit card or credit card",
+									"children": {
+										"AddWalletModal": {
+											"count": 1,
+											"location": "to the center of the screen",
+											"description": "A modal which accepts a new card"
+										}
+									}
+								}
+							}
+						},
+						"Slider": {
+							"count": 1,
+							"location": "below of the AddWalletModal",
+							"description": "It contains the payment methods"
+						},
+						"AddMoney": {
+							"count": 1,
+							"location": "It contains the credit card image",
+							"description": "dropdown list",
+							"children": {
+								"CardSelect": {
+									"count": 1,
+									"location": "to the left of the page, fixed",
+									"description": "Selects the card"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"functionality": { "": "" },
+	"sizing_updates": [],
+	"screen_and_layout_augmentations": []
+}
